@@ -1,18 +1,12 @@
-.DS_Store
-.dart_tool/
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
 
-.packages
-.pub/
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
 
-build/
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/libraries/Dart_SDK.xml
-vcs.xml
-workspace.xml
-Dart_SDK.xml
-Flutter_for_Android.xml
-
-# FVM Version Cache
-.fvm/
-.vscode/
