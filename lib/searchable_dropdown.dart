@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 const EdgeInsetsGeometry _kAlignedButtonPadding =
     EdgeInsetsDirectional.only(start: 16.0, end: 4.0);
@@ -249,37 +248,37 @@ class SearchableDropdown<T> extends StatefulWidget {
     Color? menuBackgroundColor,
   }) {
     return (SearchableDropdown._(
-      key: key!,
+      key: key,
       items: items,
-      style: style!,
+      style: style,
       searchHint: searchHint,
       hint: hint,
       disabledHint: disabledHint,
       icon: icon,
       underline: underline,
-      iconEnabledColor: iconEnabledColor!,
-      iconDisabledColor: iconDisabledColor!,
+      iconEnabledColor: iconEnabledColor,
+      iconDisabledColor: iconDisabledColor,
       iconSize: iconSize,
       isExpanded: isExpanded,
       isCaseSensitiveSearch: isCaseSensitiveSearch,
       closeButton: closeButton,
       displayClearIcon: displayClearIcon,
       clearIcon: clearIcon,
-      onClear: onClear!,
-      selectedValueWidgetFn: selectedValueWidgetFn!,
+      onClear: onClear,
+      selectedValueWidgetFn: selectedValueWidgetFn,
       keyboardType: keyboardType,
-      validator: validator!,
+      validator: validator,
       label: label,
-      searchFn: searchFn!,
+      searchFn: searchFn,
       multipleSelection: true,
       selectedItems: selectedItems,
       doneButton: doneButton,
       onChanged: onChanged,
-      displayItem: displayItem!,
+      displayItem: displayItem,
       dialogBox: dialogBox,
-      menuConstraints: menuConstraints!,
+      menuConstraints: menuConstraints,
       readOnly: readOnly,
-      menuBackgroundColor: menuBackgroundColor!,
+      menuBackgroundColor: menuBackgroundColor,
     ));
   }
 
@@ -374,10 +373,10 @@ class _SearchableDropdownState<T> extends State<SearchableDropdown<T>> {
   TextStyle? get _textStyle =>
       widget.style ??
       (_enabled && !(widget.readOnly ?? false)
-          ? Theme.of(context).textTheme.subtitle1
+          ? Theme.of(context).textTheme.bodyMedium
           : Theme.of(context)
               .textTheme
-              .subtitle1!
+              .bodyMedium!
               .copyWith(color: _disabledIconColor));
 
   bool get _enabled =>

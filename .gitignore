@@ -13,4 +13,6 @@ workspace.xml
 Dart_SDK.xml
 Flutter_for_Android.xml
 
-.fvm
+# FVM Version Cache
+.fvm/
+.vscode/
